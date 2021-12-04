@@ -21,7 +21,6 @@ function createRate(numberOfOnes, reportLength, type){
 function requestListener () {
 
   var input = this.responseText.split("\n")
-  // var input = ["101000001100","011111100111","111100001110",""]
   var numberOfOnes = initializeArray(0,input[0].length)
   input.slice(0, input.length - 1).forEach(function(line){
     line.split("").forEach(function(bit, position){
